@@ -7,7 +7,8 @@ import Profile from './pages/Profile';
 
 
 export default function App() {
-  return <BrowserRouter>
+  return (
+  <BrowserRouter>
     <Routes>
       <Route path="/" element = {<Home/>} />
       <Route path="/about" element = {<About/>} />
@@ -16,5 +17,6 @@ export default function App() {
       <Route path="/profile" element = {<Profile/>} />
     </Routes>
     </BrowserRouter>
+  );
   
 }
